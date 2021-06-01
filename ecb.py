@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import requests
 from base64 import b64decode
 import urllib.parse 
