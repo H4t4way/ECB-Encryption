@@ -36,4 +36,4 @@ if "logged in as admin!" in req.text:
     print("[+] successfully logged as admin")
     sys.exit(-1)
 
-print("[+]---------")
+print("[+] End")
